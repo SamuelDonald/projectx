@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:projecx/frontpage.dart';
+import 'package:projecx/login.dart';
 
 void main() {
   runApp(new MyApp());
@@ -63,9 +64,10 @@ class _MyHomePage extends State<MyHomePage>{
           SizedBox(height: 30),
           FlatButton(onPressed: (){
             print(" Clicked");
-            Navigator.push(context, MaterialPageRoute(builder: (context) => FrontPage()));
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
           },
-          child: Text("Click me")),
+          child: Text("LOGIN", style: TextStyle(fontSize: 20,
+          fontWeight: FontWeight.w600),)),
         ],
       ),)
     );

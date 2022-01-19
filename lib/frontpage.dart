@@ -16,7 +16,25 @@ class _FrontPage extends State<FrontPage>{
     body: Container(
       child: Column(
         children: [
-          Text(" This is the Front page")
+          Text(" This is the Front page"),
+
+          Container(
+            width: 100,
+            height: 200,
+            color: Colors.green,
+          ),
+
+          SizedBox(height: 10,),
+
+          Container(
+            width: 200,
+            height:100,            
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: Colors.red,
+            ),
+
+          ),
         ],
       )
 
